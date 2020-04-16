@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-attachment: fixed;
+    background-image: url("/Flex-grid/imagenes/fondo.jpg");
+    background-size: cover;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px gray;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.galeria img {
+    width: 100%;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    font-size: 19px;
+    border: solid 1px gray;
+    border-radius: 15px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li :hover {
+    background-color: #F5B7B1;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.selected {
+    font-weight: bold;
+    border-bottom: solid rgba(146, 173, 175, 0.7);
+    background-color: rgba(128, 128, 128, 0.5);
+
+}
